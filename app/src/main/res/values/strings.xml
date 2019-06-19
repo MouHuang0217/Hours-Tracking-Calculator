@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Calendar</string>
+    <string name="wed">\u0020\u0020Wed\u0020\u0020</string>
+    <string name="sun">\u0020\u0020Sun\u0020\u0020</string>
+    <string name="mon">\u0020\u0020Mon\u0020\u0020</string>
+    <string name="tue">\u0020\u0020Tue\u0020\u0020</string>
+    <string name="thu">\u0020\u0020Thu\u0020\u0020</string>
+    <string name="fri">\u0020\u0020Fri\u0020\u0020</string>
+    <string name="sat">\u0020\u0020Sat\u0020\u0020</string>
+    <string name="april">April</string>
+    <string name="datepicked">DatePicked:</string>
+    <string name="add_reminder">Add Reminder</string>
+    <string name="add_shift">Add Shift</string>
+    <string name="start_time">Start Time:</string>
+    <string name="starting_time">Starting Time :</string>
+    <string name="press_to_set_time">press to set time</string>
+    <string name="press_to_input_time">press to input time</string>
+</resources>
