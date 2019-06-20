@@ -16,7 +16,7 @@
         android:layout_marginLeft="40dp"
         android:layout_marginTop="60dp"
         android:text="@string/datepicked"
-        android:textColor="@color/mcv_text_date_dark"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -40,9 +40,8 @@
         android:id="@+id/reminderButton"
         android:layout_width="149dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="31dp"
-        android:layout_marginLeft="31dp"
-        android:layout_marginBottom="54dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="52dp"
         android:text="@string/add_reminder"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -52,13 +51,12 @@
         android:id="@+id/shiftButton"
         android:layout_width="149dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="54dp"
-        android:layout_marginRight="54dp"
-        android:layout_marginBottom="54dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="52dp"
+        android:onClick="shiftButtonProcedure"
         android:text="@string/add_shift"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:onClick="shiftButtonProcedure"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

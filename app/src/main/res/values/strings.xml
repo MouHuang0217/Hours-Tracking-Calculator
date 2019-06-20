@@ -14,5 +14,9 @@
     <string name="start_time">Start Time:</string>
     <string name="starting_time">Starting Time :</string>
     <string name="press_to_set_time">press to set time</string>
-    <string name="press_to_input_time">press to input time</string>
+    <string name="press_to_input_time">press to input starting time</string>
+    <string name="press_to_input_end_time">press to input end time</string>
+    <string name="ending_time">Ending Time:</string>
+    <string name="total_hours">Total Hours:</string>
+    <string name="pay_per_hour">Pay per hour :</string>
 </resources>
