@@ -1,4 +1,8 @@
 package com.example.calendarv2;
+/**
+ * created on 6/17/2019
+ * BY: Moulue Huang
+ */
 
 import android.content.Intent;
 import android.os.Bundle;
