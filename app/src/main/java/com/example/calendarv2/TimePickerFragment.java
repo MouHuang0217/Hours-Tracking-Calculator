@@ -22,6 +22,9 @@ public class TimePickerFragment extends DialogFragment implements TimePickerDial
     private EditText hoursTV;
     private EditText output;
     private EditText payPerHour;
+
+    //create an object timepickerfragment to be able too retrieve specific TextViews
+    //and update them accordinly
     public TimePickerFragment(EditText timeTV,EditText otherTV,EditText hoursTV, EditText outputTV) {
         this.time = timeTV;
         this.other_time = otherTV;
@@ -29,6 +32,7 @@ public class TimePickerFragment extends DialogFragment implements TimePickerDial
         this.output = outputTV;
         Log.i("Timepicker","createdFragment");
     }
+
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -74,8 +78,8 @@ public class TimePickerFragment extends DialogFragment implements TimePickerDial
             double min = (double) (difference - (1000*60*60*24*days) - (1000*60*60*hours)) / (1000*60);
             hours = (hours < 0 ? -hours : hours);
 
-            //set the total hours worked into the Textview of hours
-            hoursTV.setText(String.valueOf(hours));
+            //set the total hours worked into the Textview of hours rounded to the 3rd decimal place
+            hoursTV.setText(String.format("%.2f",hours) + " hours");
            // output.setText(String.valueOf(totalPay));
         } catch (ParseException e) {
             e.printStackTrace();

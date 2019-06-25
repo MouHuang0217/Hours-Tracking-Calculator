@@ -32,9 +32,11 @@ public class MainActivity extends FragmentActivity {
             @Override
             public void onDateSelected(@NonNull MaterialCalendarView widget, @NonNull CalendarDay date, boolean selected) {
                 TextView textView = findViewById(R.id.DateSelectedText);
+
                 String month = Integer.toString(date.getMonth() + 1);
                 String year = Integer.toString(date.getYear());
                 String day = Integer.toString(date.getDay());
+
                 String formattedDate = (String.format(Locale.getDefault(), "%s - %s - %s", month, day, year));
                 textView.setText("DatePicked: " + formattedDate);
                 //Toast.makeText(MainActivity.this, "" + formattedDate, Toast.LENGTH_SHORT).show(); //console check lien

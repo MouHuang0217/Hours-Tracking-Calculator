@@ -26,10 +26,10 @@
             android:layout_marginEnd="40dp"
             android:autofillHints=""
             android:ems="10"
+            android:gravity="center"
             android:inputType="numberDecimal"
             android:text=""
             android:textSize="15sp"
-            android:gravity="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="LabelFor"
@@ -78,16 +78,16 @@
             android:editable="false"
             android:ems="10"
             android:focusable="false"
+            android:gravity="center"
             android:hint="@string/press_to_input_end_time"
             android:inputType="none"
             android:textSize="15sp"
-            android:gravity="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="Deprecated"
             tools:layout_conversion_wrapHeight="147"
             tools:layout_conversion_wrapWidth="625"
-            tools:targetApi="o"
-            tools:ignore="Deprecated" />
+            tools:targetApi="o" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -107,10 +107,10 @@
             android:layout_marginEnd="40dp"
             android:autofillHints=""
             android:ems="10"
-            android:inputType="numberDecimal"
-            android:textSize="13sp"
             android:gravity="center"
             android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            android:textSize="13sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="LabelFor"
@@ -150,16 +150,16 @@
             android:editable="false"
             android:ems="10"
             android:focusable="false"
+            android:gravity="center"
             android:hint="@string/press_to_input_time"
             android:inputType="none"
             android:textSize="15sp"
-            android:gravity="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="Deprecated"
             tools:layout_conversion_wrapHeight="147"
             tools:layout_conversion_wrapWidth="625"
-            tools:targetApi="o"
-            tools:ignore="Deprecated" />
+            tools:targetApi="o" />
 
         <TextView
             android:id="@+id/startTime"
@@ -199,17 +199,30 @@
             android:layout_width="200dp"
             android:layout_height="38dp"
             android:layout_marginEnd="36dp"
+            android:editable="false"
             android:ems="10"
+            android:gravity="center"
             android:inputType="none"
             android:text=""
-            android:gravity="center"
-            android:editable="false"
+            android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="Deprecated"
             tools:layout_conversion_wrapHeight="147"
-            tools:layout_conversion_wrapWidth="625"
-            tools:ignore="Deprecated" />
+            tools:layout_conversion_wrapWidth="625" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/finishButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="587dp"
+        android:layout_marginBottom="96dp"
+        android:text="Finish"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
