@@ -1,4 +1,4 @@
-package com.example.calendarv2;
+package com.example.calendarv2.Fragments;
 
 
 import android.app.Dialog;
@@ -36,6 +36,7 @@ public class TimePickerFragment extends DialogFragment implements TimePickerDial
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         // Use the current time as the default values for the picker
         final Calendar c = Calendar.getInstance();
         int hour = c.get(Calendar.HOUR_OF_DAY);

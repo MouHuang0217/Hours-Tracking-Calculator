@@ -1,10 +1,11 @@
-package com.example.calendarv2;
+package com.example.calendarv2.Activities;
 /**
  * created on 6/17/2019
  * BY: Moulue Huang
  */
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -14,12 +15,18 @@ import android.widget.EditText;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 
+import com.example.calendarv2.Fragments.TimePickerFragment;
+import com.example.calendarv2.R;
+
 public class WorkHoursActivity extends AppCompatActivity implements EditText.OnClickListener  {
-    Thread t;
+    private Thread THREAD;
+    private float TOTALPAY = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
         //initialize bundle to pass data back into main frame
         Bundle startEndTime = getIntent().getExtras();
         Intent passData_Intent = new Intent(this, WorkHoursActivity.class);
@@ -36,7 +43,7 @@ public class WorkHoursActivity extends AppCompatActivity implements EditText.OnC
         finishButton.setOnClickListener(this);
 
         //add a new thread to update the totalPay periodically
-        t = new Thread() {
+        THREAD = new Thread() {
             @Override
             public void run() {
                 try {
@@ -57,7 +64,7 @@ public class WorkHoursActivity extends AppCompatActivity implements EditText.OnC
 
         };
         //officially start the Thread
-        t.start();
+        THREAD.start();
 
     }
 
@@ -68,7 +75,7 @@ public class WorkHoursActivity extends AppCompatActivity implements EditText.OnC
 
         float d_pay_per_hour = 0,d_total_hours = 0;
 
-        //try/catch to see if the Edit Text's are empty or not
+        //try/catch to see if the Edit Text's is empty or not
         try {
             d_pay_per_hour = Float.valueOf(payInput.getText().toString());
 
@@ -81,26 +88,14 @@ public class WorkHoursActivity extends AppCompatActivity implements EditText.OnC
         }
 
         //calculate the totalPay
-        float totalPay = d_pay_per_hour * d_total_hours;
+        TOTALPAY = d_pay_per_hour * d_total_hours;
         final EditText incomeOutputTV = (EditText)findViewById(R.id.totalEarnedOutput);
 
         //convert the string to two decimal places and set the Text
-        String s_totalPay = String.format("%.2f",totalPay);
+        String s_totalPay = String.format("%.2f",TOTALPAY);
         incomeOutputTV.setText("$" + s_totalPay);
     
     }
-//TODO add Calculate button, and finish button - > calculate
-/*
-        String startTime = "startTime:";
-        passData_Intent.putExtra("startTime",startTime);
-
-        String endTime = "endTime:";
-        passData_Intent.putExtra("endTime",endTime);
-
-        setResult(RESULT_OK,passData_Intent);
-*/
-
-
 
     @Override
     public void onClick(View view) {
@@ -117,8 +112,11 @@ public class WorkHoursActivity extends AppCompatActivity implements EditText.OnC
                 OtherTV = (EditText) findViewById(R.id.startTimeInput);
                 break;
             case R.id.finishButton:
+                THREAD.interrupt();
+                Intent intent = new Intent();
+                intent.putExtra("totalPay",String.format("%.2f",TOTALPAY));
+                setResult(RESULT_OK,intent);
                 finish();
-                t.interrupt();
                 Log.i("WorkHoursActivity","finished");
                 break;
             default:

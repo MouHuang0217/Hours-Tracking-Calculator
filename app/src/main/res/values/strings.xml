@@ -19,4 +19,8 @@
     <string name="ending_time">Ending Time:</string>
     <string name="total_hours">Total Hours:</string>
     <string name="pay_per_hour">Pay per hour :</string>
+    <string name="delete">Delete</string>
+    <string name="total_earned">Total Earned:</string>
+    <string name="calculate_pay_check">Calculate Pay Check</string>
+    <string name="click_button_to_exit_paycheck_mode">Click Button to Exit Paycheck mode</string>
 </resources>
