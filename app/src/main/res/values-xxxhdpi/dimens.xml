@@ -1,0 +1,4 @@
+<resources>
+	<dimen name="edit_text_height">114dp</dimen>
+	<dimen name="edit_text_width">600dp</dimen>
+</resources>
