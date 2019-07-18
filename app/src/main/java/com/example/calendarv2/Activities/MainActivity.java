@@ -337,5 +337,5 @@ public class MainActivity extends FragmentActivity {
     }
 
 
-    //completed TODOS
+    //completed TODOS and readme
 }
