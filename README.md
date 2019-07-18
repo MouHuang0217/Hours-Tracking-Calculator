@@ -13,8 +13,7 @@ Helping someone visualize and know about their next paycheck without manually ca
 or trying to remember how many days/hours they worked.
 
 ## Screenshots
-<img src="images/cal1.jpg" width = "100" >
-![images](https://github.com/MouHuang0217/StudentCalendarv2/blob/master/images/cal1.jpg)
+<img src="images/cal1.jpg" width = "200" >
 
 
 
