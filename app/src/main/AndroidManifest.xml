@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.calendarv2">
+
     <supports-screens
-        android:resizeable="true"
-        android:smallScreens="true"
+        android:largeScreens="false"
+        android:largestWidthLimitDp="600"
         android:normalScreens="true"
-        android:largeScreens="true"
-        android:anyDensity="true" />
+        android:smallScreens="true"
+        android:xlargeScreens="false" />
 
     <application
         android:allowBackup="true"
@@ -15,7 +16,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.WorkHoursActivity"></activity>
+        <activity android:name=".Activities.InvoiceActivity"></activity>
+        <activity android:name=".Activities.WorkHoursActivity" />
         <activity android:name=".Activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -9,6 +9,11 @@ import com.prolificinteractive.materialcalendarview.spans.DotSpan;
 
 /**
  * Decorate several days with a dot
+ * edited and added some extra logics with the help of samples in
+ *
+ * https://github.com/prolificinteractive/material-calendarview/
+ * blob/master/sample/src/main/java/com/prolificinteractive/materialcalendarview/
+ * sample/decorators/EventDecorator.java
  */
 public class EventDecorator implements DayViewDecorator {
 

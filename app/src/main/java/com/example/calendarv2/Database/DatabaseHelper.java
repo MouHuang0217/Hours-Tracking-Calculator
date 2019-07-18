@@ -1,4 +1,9 @@
-package com.example.calendarv2;
+package com.example.calendarv2.Database;
+
+/**
+ * created on 7/12/2019
+ * BY: Moulue Huang
+ */
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -6,11 +11,12 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+
 public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String DATABASE_NAME = "Paychecks.db";
     public static final String TABLE_NAME = "Paychecks_table";
-    public static final String ID = "ID";
     public static final String DATE = "DATE";
+    public static final String HOURS = "HOURS";
     public static final String PAY = "PAY";
 
     //constructor for the database
@@ -21,9 +27,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     //create a database
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("create table " + TABLE_NAME +" (ID INTEGER PRIMARY KEY AUTOINCREMENT,DATE TEXT,PAY TEXT)");
+        db.execSQL("create table " + TABLE_NAME +" (DATE TEXT,HOURS TEXT, PAY TEXT)");
     }
-
 
     //don't delete the database if a SQLiteDatabase already exists
     @Override
@@ -32,10 +37,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
     //insert data into the database
-    public boolean insertData(String date, String pay){
+    public boolean insertData(String date, String hours, String pay){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(DATE,date);
+        contentValues.put(HOURS,hours);
         contentValues.put(PAY,pay);
 
         long result = db.insert(TABLE_NAME,null,contentValues);

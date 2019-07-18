@@ -1,6 +1,6 @@
 package com.example.calendarv2.Activities;
 /**
- * created on 6/17/2019
+ * created on 7/5/2019
  * BY: Moulue Huang
  */
 
@@ -21,6 +21,7 @@ import com.example.calendarv2.R;
 public class WorkHoursActivity extends AppCompatActivity implements EditText.OnClickListener  {
     private Thread THREAD;
     private float TOTALPAY = 0;
+    private float HOURS = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -82,6 +83,7 @@ public class WorkHoursActivity extends AppCompatActivity implements EditText.OnC
             //split the String to get the hours in decimal only
             String[] Split = totalHours.getText().toString().split(" ");
             d_total_hours = Float.valueOf(Split[0]);
+            HOURS = d_total_hours;
         }
         catch (IllegalArgumentException x){
             Log.i("payInput/totalHours","empty String");
@@ -115,6 +117,7 @@ public class WorkHoursActivity extends AppCompatActivity implements EditText.OnC
                 THREAD.interrupt();
                 Intent intent = new Intent();
                 intent.putExtra("totalPay",String.format("%.2f",TOTALPAY));
+                intent.putExtra("totalHours",String.format("%.2f",HOURS));
                 setResult(RESULT_OK,intent);
                 finish();
                 Log.i("WorkHoursActivity","finished");
