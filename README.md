@@ -13,7 +13,10 @@ Helping someone visualize and know about their next paycheck without manually ca
 or trying to remember how many days/hours they worked.
 
 ## Screenshots
-<img src="images/cal1.jpg" width = "200" >
+<img src="images/cal1.jpg" width = "250" >
+<img src="images/cal2.jpg" width = "250" >
+<img src="images/cal3.jpg" width = "250" >
+<img src="thumbnail.jpg" width = "250" >
 
 
 
