@@ -2,9 +2,8 @@
 
 #### Will add link when uploaded to the android playstore
 
-StudentCalendar is an visual application that creates event icons under the days that you worked on.
-Upload work days and hours into specific days and use that to calculate the amount of one's next paycheck
-in addition to having it to create an invoice of the days selected.
+StudentCalendar is an simple android application that creates event icons under the days that you worked on.
+Upload work days and hours into specific days and use that to calculate the amount of one's next paycheck in addition to having it to create an invoice of the days selected.
 
 ## Purpose and Why?
 
