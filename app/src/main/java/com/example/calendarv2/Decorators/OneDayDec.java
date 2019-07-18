@@ -11,6 +11,10 @@ import com.prolificinteractive.materialcalendarview.MaterialCalendarView;
 
 /**
  * Decorate a day by making the text big and bold
+ * modified the sample of to the use for my project
+ * https://github.com/prolificinteractive/material-calendarview/
+ * blob/master/sample/src/main/java/com/prolificinteractive/materialcalendarview/
+ * sample/decorators/OneDayDecorator.java
  */
 public class OneDayDec implements DayViewDecorator {
 
