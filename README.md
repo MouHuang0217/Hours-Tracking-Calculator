@@ -1,4 +1,4 @@
-# StudentCalendar
+# PaycheckCalendar
 
 #### Will add link when uploaded to the android playstore
 
