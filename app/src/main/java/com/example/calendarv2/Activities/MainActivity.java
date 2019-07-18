@@ -335,8 +335,5 @@ public class MainActivity extends FragmentActivity {
                 break;
         }
     }
-
-
-    //completed TODOS and readmme
-    //checking
+  //completed merge
 }
