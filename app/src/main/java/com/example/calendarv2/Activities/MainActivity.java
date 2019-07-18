@@ -337,6 +337,5 @@ public class MainActivity extends FragmentActivity {
     }
 
 
-    //Todo: create a new activity that shows the receipt
-    //Todo: add a readme to the github page
+    //completed TODOS
 }
