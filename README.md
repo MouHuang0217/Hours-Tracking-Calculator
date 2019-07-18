@@ -13,11 +13,7 @@ Helping someone visualize and know about their next paycheck without manually ca
 or trying to remember how many days/hours they worked.
 
 ## Screenshots
-![cal1](https://user-images.githubusercontent.com/31867712/61428236-1b89e380-a8d6-11e9-91ed-169f12392fbd.jpg)
-![cal2](https://user-images.githubusercontent.com/31867712/61428237-1c227a00-a8d6-11e9-91e7-8ff29d60e0ae.jpg)
-![cal3](https://user-images.githubusercontent.com/31867712/61428238-1c227a00-a8d6-11e9-9067-30d3d8e98cf1.jpg)
-![thumbnail](https://user-images.githubusercontent.com/31867712/61428239-1c227a00-a8d6-11e9-9568-4538aca2503d.jpg)
-
+![images/filename cal1.jpg
 
 
 ## Bult with
