@@ -18,6 +18,21 @@ or trying to remember how many days/hours they worked.
 
 ## Bult with
 
-*https://github.com/Applandeo/Material-Calendar-View
+* [Material Calendar View](https://github.com/Applandeo/Material-Calendar-View])
+* [SqLiteDatabase](https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase)
+* [TimePickerDialog](https://developer.android.com/reference/android/app/TimePickerDialog)
+* [Cursor](https://developer.android.com/reference/android/database/Cursor)
 
+## Features
+* Single date picker
+* Range date picker
+* Event Decorators
+* Invoice Activity
+* Time Pickers
 
+## Authors
+* **Moulue Huang** Created on 6/16/2019
+
+## Acknowledgments
+* To the co-workers who inspired me to create this project based on their personal problems with pay-by-hour checks
+* Material Calendar View Event Decorator samples
