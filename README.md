@@ -30,6 +30,10 @@ or trying to remember how many days/hours they worked.
 * Invoice Activity
 * Time Pickers
 
+## To-do
+- [] create a more appealing visual for the invoice receipt
+- [] apply decoration to the Buttons to be more appealing
+
 ## Authors
 * **Moulue Huang** Created on 6/16/2019
 
