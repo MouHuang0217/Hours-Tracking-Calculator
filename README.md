@@ -1,4 +1,4 @@
-# PaycheckCalendar
+# Hours Tracking Calendar
 
 #### Will add link when uploaded to the android playstore
 
