@@ -16,7 +16,6 @@ or trying to remember how many days/hours they worked.
   <img src="images/cal1.jpg" width = "250" > 
   <img src="images/cal2.jpg" width = "250" >
   <img src="images/cal3.jpg" width = "250" >
-  <img src="images/cal4.jpg" width = "250" >
 </p>
 
 
